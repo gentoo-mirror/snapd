@@ -1,10 +1,9 @@
-BDEPEND=>=dev-lang/go-1.10 virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=dev-go/govendor >=dev-lang/go-1.9 sys-fs/xfsprogs man? ( dev-python/docutils ) sys-devel/gettext >=dev-lang/go-1.10 virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst setup unpack
-DEPEND=!sys-apps/snap-confine sys-libs/libseccomp[static-libs] sys-apps/apparmor dev-libs/glib sys-fs/squashfs-tools:* sec-policy/apparmor-profiles >=dev-lang/go-1.9 dev-python/docutils sys-devel/gettext sys-fs/xfsprogs dev-go/govendor
 DESCRIPTION=Service and tools for management of snap packages
 EAPI=7
 HOMEPAGE=http://snapcraft.io/
-IUSE=systemd kernel_linux
+IUSE=systemd -doc +man kernel_linux
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=!sys-apps/snap-confine sys-libs/libseccomp[static-libs] sys-apps/apparmor dev-libs/glib sys-fs/squashfs-tools:* sec-policy/apparmor-profiles
@@ -12,4 +11,4 @@ REQUIRED_USE=systemd
 RESTRICT=primaryuri strip
 SLOT=0
 _eclasses_=bash-completion-r1	47a7402d95930413ce25ba8d857339bb	git-r3	86a0188f2ad9eb3d65e4d031ab8a0422	golang-base	c57d2c3f9e1a02d0feb8b87c7b689892	linux-info	953c3b1c472dcadbf62098a9301327f2	multilib	1d91b03d42ab6308b5f4f6b598ed110e	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
-_md5_=12e4dc880b1dc10b838dc223e4e5c712
+_md5_=44b16d1eb8b919e9fe99906441c6688c

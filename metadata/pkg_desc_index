@@ -1,2 +1,2 @@
-app-emulation/snapd 2.44.5 9999: Service and tools for management of snap packages
+app-emulation/snapd 2.44.5 2.45.3.1 9999: Service and tools for management of snap packages
 dev-go/govendor 1.0.8: Print version used to build Go executables
